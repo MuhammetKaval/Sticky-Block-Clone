@@ -5,7 +5,7 @@ using UnityEngine;
 public class SwerveSystem : MonoBehaviour
 {
 
-    [SerializeField] private float speed;
+    [SerializeField] private float speed = 20.0f;
 
     private new Rigidbody rigidbody;
 
