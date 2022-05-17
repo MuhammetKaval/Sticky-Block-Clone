@@ -13,6 +13,9 @@ public class Move : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rigidbody.velocity = new Vector3(rigidbody.velocity.x, rigidbody.velocity.y, speed * Time.fixedDeltaTime);
+        if (GameManager.Instance.isGameActive)
+        {
+            rigidbody.velocity = new Vector3(rigidbody.velocity.x, rigidbody.velocity.y, speed * Time.fixedDeltaTime);
+        }
     }
 }

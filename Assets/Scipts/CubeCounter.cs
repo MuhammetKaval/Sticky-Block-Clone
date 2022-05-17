@@ -21,7 +21,7 @@ public class CubeCounter : MonoBehaviour
     {
         GameManager.Instance.cubeCount--;
 
-        if (GameManager.Instance.cubeCount <= 0)
+        if (GameManager.Instance.cubeCount == 0 && GameManager.Instance != null)
         {
             GameManager.Instance.GameOver();
         }
