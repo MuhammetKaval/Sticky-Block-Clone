@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public int cubeCount;
     public bool isGameActive;
     public bool isGameOver;
+    public bool isReachFinishLine;
     public GameObject startUIObjects;
     public GameObject gameOverUIObjects;
     private void Awake()
